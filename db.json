@@ -1,0 +1,40 @@
+{
+  "toys": [
+    {
+      "id": 1,
+      "name": "Woody",
+      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+      "likes": 8
+    },
+    {
+      "id": 2,
+      "name": "Buzz Lightyear",
+      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Images.png",
+      "likes": 14
+    },
+    {
+      "id": 3,
+      "name": "Mr. Potato Head",
+      "image": "http://www.pngmart.com/files/3/Mr-Potato-Head-PNG-Photos.png",
+      "likes": 5
+    },
+    {
+      "id": 4,
+      "name": "Slinky Dog",
+      "image": "https://www.freepngimg.com/thumb/toy_story/36276-6-slinky-dog-free-download.png",
+      "likes": 11
+    },
+    {
+      "id": 5,
+      "name": "Rex",
+      "image": "http://www.pngmart.com/files/3/Rex-Toy-Story-PNG-Transparent-Image.png",
+      "likes": 9
+    },
+    {
+      "id": 6,
+      "name": "Hamm",
+      "image": "https://i.pinimg.com/originals/d4/b3/90/d4b390be905ea738767c61ae3d3d5476.png",
+      "likes": 3
+    }
+  ]
+}
