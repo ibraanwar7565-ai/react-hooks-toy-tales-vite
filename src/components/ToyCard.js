@@ -4,7 +4,7 @@ function ToyCard({ toy, onLike, onDelete }) {
   const { id, name, image, likes } = toy;
 
   return (
-    <div className="card">
+    <div className="card" data-testid="toy-card">
       <h2>{name}</h2>
       <img src={image} alt={name} className="toy-avatar" />
       <p>{likes} Likes </p>
