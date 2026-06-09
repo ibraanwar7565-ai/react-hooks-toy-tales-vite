@@ -12,63 +12,33 @@ function ToyForm({ onAddToy }) {
   }
 
   return (
-    <div
-      style={{
-        backgroundColor: "#16213e",
-        padding: "24px",
-        display: "flex",
-        justifyContent: "center",
-      }}
-    >
-      <form
-        onSubmit={handleSubmit}
-        style={{
-          display: "flex",
-          gap: "12px",
-          flexWrap: "wrap",
-          justifyContent: "center",
-        }}
-      >
+    <div className="container">
+      <form className="add-toy-form" onSubmit={handleSubmit}>
+        <h3>Create a toy!</h3>
         <input
           type="text"
+          name="name"
           placeholder="Enter a toy's name..."
+          className="input-text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          style={{
-            padding: "10px 14px",
-            borderRadius: "6px",
-            border: "none",
-            fontSize: "1rem",
-            width: "220px",
-          }}
         />
+        <br />
         <input
           type="text"
-          placeholder="Enter a URL for the toy's image..."
+          name="image"
+          placeholder="Enter a toy's image URL..."
+          className="input-text"
           value={image}
           onChange={(e) => setImage(e.target.value)}
-          style={{
-            padding: "10px 14px",
-            borderRadius: "6px",
-            border: "none",
-            fontSize: "1rem",
-            width: "320px",
-          }}
         />
-        <button
+        <br />
+        <input
           type="submit"
-          style={{
-            backgroundColor: "#e94560",
-            color: "white",
-            border: "none",
-            padding: "10px 24px",
-            borderRadius: "6px",
-            cursor: "pointer",
-            fontSize: "1rem",
-          }}
-        >
-          Add Toy
-        </button>
+          name="submit"
+          value="Create New Toy"
+          className="submit"
+        />
       </form>
     </div>
   );

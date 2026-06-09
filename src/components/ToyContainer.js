@@ -3,23 +3,9 @@ import ToyCard from "./ToyCard";
 
 function ToyContainer({ toys, onLike, onDelete }) {
   return (
-    <div
-      id="toy-collection"
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        padding: "32px",
-        gap: "24px",
-      }}
-    >
+    <div id="toy-collection">
       {toys.map((toy) => (
-        <ToyCard
-          key={toy.id}
-          toy={toy}
-          onLike={onLike}
-          onDelete={onDelete}
-        />
+        <ToyCard key={toy.id} toy={toy} onLike={onLike} onDelete={onDelete} />
       ))}
     </div>
   );
